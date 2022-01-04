@@ -74,13 +74,13 @@ setRiskAssessmentStateListener(new RiskAssessment.RiskAssessmentStateListener()æ
 {
 	"Response":{
 		"Data":{
-						"UUid":"21f71983-6a4c-4b1c-a5a3-4b79a08bacc1",
-						"Code":0,
-						"Message":"OK",
-						"Value":{
-										"RiskLevel":"pass",
-										"RiskType":null
-						}
+			"UUid":"21f71983-6a4c-4b1c-a5a3-4b79a08bacc1",
+			"Code":0,
+			"Message":"OK",
+			"Value":{
+				"RiskLevel":"pass",
+				"RiskType":null
+				}
 		},
 	"RequestId":"250f67d3-0f14-4955-bc64-5c5b5d2ebc60"
 	}
