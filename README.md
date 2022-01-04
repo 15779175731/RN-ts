@@ -1,3 +1,4 @@
+## IOS
 为您的移动应用提供了ios sdk , 开始使用有以下步骤
 
 ## 1.**集成SDK**
@@ -31,9 +32,7 @@ end
 ```markdown
  $ pod install
 ```
-
-     您应该看到以下输出
-
+您应该看到以下输出
 ```markdown
 Analyzing dependencies
 Downloading dependencies
