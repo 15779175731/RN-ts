@@ -58,10 +58,10 @@ RiskAssessment.getInstance().setRiskAssessmentStateListener(new RiskAssessment.R
             public void isReady() {
                 JSONObject result= RiskAssessment.getInstance().getDeviceResult();
                 if(result!= null){
-									//do something with device result
+		//do something with device result
                 } else {
                     ShieldException error = RiskAssessment.getError();
-									//do error handling
+		//do error handling
                 }
             }
  });
