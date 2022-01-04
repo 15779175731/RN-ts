@@ -70,7 +70,7 @@ There is 1 dependency from the Podfile and 1 total pod installed.
 - 查看是否添加成功，选中工程的target，点击Build Phases，查看Link Binary With Libraries目录下是否有该SDK文件，若无则点击此目录下的“+”号添加解压出的.a后缀名的sdk文件
 
 <aside>
-💡 如果您的项目使用的是swift，则需要创建桥接文件进行桥接，因为此sdk是由Object-c构建的,注意命名规则为**`TargetName-Bridging-Header`
+💡 如果您的项目使用的是swift，则需要创建桥接文件进行桥接，因为此sdk是由Object-c构建的,注意命名规则为`TargetName-Bridging-Header`
 
 </aside>
 
@@ -79,7 +79,7 @@ There is 1 dependency from the Podfile and 1 total pod installed.
 - 若commoand + 鼠标右键定位不到.h头文件，这选中工程的target，点击Build Phases，在Compile Sources目录下点击“+”添加.h头文件
 
 <aside>
-💡 Xcode12 运行模拟器报building for iOS Simulator, but linking in object file built for iOS, file错误解决方案**
+💡 Xcode12 运行模拟器报building for iOS Simulator, but linking in object file built for iOS, file错误解决方案
 
 </aside>
 
@@ -140,7 +140,8 @@ func application(_ application: UIApplication, didFinishLaunchingWithOptions lau
 ```swift
 RiskAssessmentLib.ra().getDeviceResult { (result) in
 
-						//do something with the result
+		//do something with the result
+	
             } failure: { (Error) in
 
                 // log error
