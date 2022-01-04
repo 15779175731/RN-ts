@@ -70,16 +70,16 @@ There is 1 dependency from the Podfile and 1 total pod installed.
 - 查看是否添加成功，选中工程的target，点击Build Phases，查看Link Binary With Libraries目录下是否有该SDK文件，若无则点击此目录下的“+”号添加解压出的.a后缀名的sdk文件
 
 <aside>
-💡 如果您的项目使用的是swift，则需要创建桥接文件进行桥接，因为此sdk是由Object-c构建的,注意命名规则为**`TargetName-Bridging-Header`**
+💡 如果您的项目使用的是swift，则需要创建桥接文件进行桥接，因为此sdk是由Object-c构建的,注意命名规则为**`TargetName-Bridging-Header`
 
 </aside>
 
 - 创建好桥接头文件后在桥接文件中添加解压出的.h头文件
-- 选择 Targets -> Build Settings -> 选择all并搜索header, 在Swift Compiler - General 目录下的Objective-C Bridging Header中填写桥接头文件**`TargetName-Bridging-Header`**  的相对路径
+- 选择 Targets -> Build Settings -> 选择all并搜索header, 在Swift Compiler - General 目录下的Objective-C Bridging Header中填写桥接头文件`TargetName-Bridging-Header`的相对路径
 - 若commoand + 鼠标右键定位不到.h头文件，这选中工程的target，点击Build Phases，在Compile Sources目录下点击“+”添加.h头文件
 
 <aside>
-💡 **Xcode12 运行模拟器报building for iOS Simulator, but linking in object file built for iOS, file错误解决方案**
+💡 Xcode12 运行模拟器报building for iOS Simulator, but linking in object file built for iOS, file错误解决方案**
 
 </aside>
 
@@ -90,7 +90,7 @@ There is 1 dependency from the Podfile and 1 total pod installed.
 ## 2.初始化SDK
 
 <aside>
-💡  您需要获取到您腾讯云账号的 APP_ID，SECRET_ID，SECRET_KEY来初始化SDK, SDK**只**被初始化**一次**，如果**多次**初始化会抛出异常。
+💡  您需要获取到您腾讯云账号的 APP_ID，SECRET_ID，SECRET_KEY来初始化SDK, SD只被初始化一次，如果多次初始化会抛出异常。
 
 </aside>
 
