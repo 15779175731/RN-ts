@@ -38,7 +38,7 @@ RiskAssessment(APP_ID, SECRET_ID, SECRET_KEY)
 
 </aside>
 
-https://www.notion.so/web-1077e11a9788428ea15be9ff55596b5b#b98da2f539a144c7a74e2d10bb194aec
+![Untitled](https://user-images.githubusercontent.com/56524120/148018289-07013d7e-8426-494f-8f1a-fb3c91acfd44.png)
 
 配置好后，就可以在浏览器端获取到返回的数据了。
 
