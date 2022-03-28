@@ -1,5 +1,3 @@
-## Web
-
 为您的 Web 应用程序提供了一个 JavaScript 包。开始集成有两个步骤：
 
 ## 1.[集成 JavaScript](https://iguide.shield.com/iguide/device/web#integrate-js)
@@ -10,22 +8,22 @@
 </aside>
 
 ```jsx
-npm i @tencent/risk-assessment
+npm i tencent-risk-assessment
 ```
 
 ## 2.[获取设备结果](https://iguide.shield.com/iguide/device/web#get-device-results-web)
 
 <aside>
-💡 需要您的腾讯云账号的 APP_ID, SECRET_ID，SECRET_KEY来检索设备结果
+💡 需要您的腾讯云账号的 APP_ID, SECRET_ID，SECRET_KEY，和MODE来检索设备结果。其中MODE：为模式选择，取值有两个，client：客户端集成模式 或 server服务端集成模式。
 
 </aside>
 
 首先，将 JavaScript 代码片段复制到您的项目中。
 
 ```jsx
-import RiskAssessment from "@tencent/risk-assessment"
+import RiskAssessment from "tencent-risk-assessment"
 
-RiskAssessment(APP_ID, SECRET_ID, SECRET_KEY)
+RiskAssessment(APP_ID, SECRET_ID, SECRET_KEY, MODE)
   .then((res) => {
 
     //do something with the res
@@ -38,7 +36,7 @@ RiskAssessment(APP_ID, SECRET_ID, SECRET_KEY)
 
 </aside>
 
-![Untitled](https://user-images.githubusercontent.com/56524120/148018289-07013d7e-8426-494f-8f1a-fb3c91acfd44.png)
+![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/f5ea00e6-48d5-40a3-9d1c-92580addeb78/Untitled.png)
 
 配置好后，就可以在浏览器端获取到返回的数据了。
 
@@ -47,16 +45,25 @@ RiskAssessment(APP_ID, SECRET_ID, SECRET_KEY)
 ```jsx
 {
 	"Data":{
-		"Code":0,
-		"Message":"OK",
-        	"UUid":"21f71983-6a4c-4b1c-a5a3-4b79a08bacc1",
-		"Value":{
-		"RiskLevel":"pass",
-		"RiskType":null
-			}
-		},
+				"Code":0,
+				"Message":"OK",
+        "UUid":"21f71983-6a4c-4b1c-a5a3-4b79a08bacc1",
+				"Value":{
+						"RiskLevel":"pass",
+						"RiskType":null
+					}
+			},
 	"RequestId":"250f67d3-0f14-4955-bc64-5c5b5d2ebc60"
 }
 ```
 
 若显示以上数据的话，恭喜您调用成功
+
+import RiskAssessment from "tencent-risk-assessment"
+
+RiskAssessment(APP_ID, SECRET_ID, SECRET_KEY, MODE)
+  .then((res) => {
+
+    //do something with the res
+
+  })
